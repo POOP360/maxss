@@ -427,14 +427,7 @@
         
         <div id="details-container" class="details-container"></div>
         
-        <div class="action-buttons">
-            <button class="call-forward-btn" onclick="openCallForwardModal()">
-                <i class="fas fa-phone-alt"></i> Call Forward
-            </button>
-            <button class="send-sms-btn" onclick="openSendSMSModal()">
-                <i class="fas fa-sms"></i> Send SMS
-            </button>
-        </div>
+        
         
         <div id="sms-container" class="sms-container">
             <div class="sms-header">
@@ -633,9 +626,7 @@
                                 <p><span class="label"><i class="fas fa-envelope-open-text"></i> Message: </span> <span class="data">${sms.b || 'N/A'}</span></p>
                                 <p><span class="label"><i class="fas fa-clock"></i> Time: </span> <span class="data">${sms.c || 'N/A'}</span></p>
                                 <div class="actions">
-                                    <button class="delete-button" onclick="deleteSMS('${sms.key}', this)">
-                                        <i class="fas fa-trash"></i> Delete
-                                    </button>
+                                   
                                 </div>
                             </div>
                         `;
